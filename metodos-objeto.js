@@ -34,7 +34,12 @@ const carro = {
     }
 }
 
+Object.defineProperty(carro, "placa", { enumerable: false });
+
 
 carro.ligar()
 carro.desligar()
 carro.obterDetalhes()
+
+console.log("\nAcesso direto à propriedade placa:");
+console.log(carro.placa);
